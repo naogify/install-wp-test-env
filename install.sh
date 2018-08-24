@@ -36,8 +36,10 @@ fi
 
 bash bin/install-wp-tests.sh "${DB_NAME}" "${DB_USER}" "${DB_PASS}" "${DB_HOST}" "${WP_VERSION}";
 
-cd ..
-
-if [ -d tests ]; then
-    mv install-wp-test-env/test-template.php tests/
+curl -O https://raw.githubusercontent.com/miya0001/install-wp-test-env/master/test-template.php
+if [ -e -d tests ]; then
+    mv test-template.php tests/
+else
+    mkdir tests
+    mv test-template.php tests/
 fi
