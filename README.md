@@ -7,13 +7,13 @@ It installs WordPress test environment for PHPUnit.
 Run following command.
 
 ```
-$ curl -L https://raw.githubusercontent.com/miya0001/install-wp-test-env/master/install.sh | bash
+$ curl -L https://raw.githubusercontent.com/naogify/install-wp-test-env/master/install.sh | bash
 ```
 
 If you have DB informations, add `-s` option. 
 
 ```
-$ curl -L https://raw.githubusercontent.com/miya0001/install-wp-test-env/master/install.sh | bash -s <db-name> <db-user> <db-pass> [db-host] [wp-version]
+$ curl -L https://raw.githubusercontent.com/naogify/install-wp-test-env/master/install.sh | bash -s <db-name> <db-user> <db-pass> [db-host] [wp-version]
 ```
 
 ## Requires
