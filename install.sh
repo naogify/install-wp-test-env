@@ -35,3 +35,9 @@ if [ -e $WP_TESTS_DIR ]; then
 fi
 
 bash bin/install-wp-tests.sh "${DB_NAME}" "${DB_USER}" "${DB_PASS}" "${DB_HOST}" "${WP_VERSION}";
+
+cd ..
+
+if -ed tests; then
+    mv install-wp-test-env/test-template.php tests/
+fi
