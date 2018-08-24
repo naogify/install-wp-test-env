@@ -4,7 +4,7 @@ set -ex
 
 DB_NAME=wordpress_test
 DB_USER=root
-DB_PASS=''
+DB_PASS=wordpress
 DB_HOST=localhost
 WP_VERSION=${1-nightly}
 #SKIP_DB_CREATE=${6-false}
