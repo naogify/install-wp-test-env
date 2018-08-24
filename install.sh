@@ -38,6 +38,6 @@ bash bin/install-wp-tests.sh "${DB_NAME}" "${DB_USER}" "${DB_PASS}" "${DB_HOST}"
 
 cd ..
 
-if -e -d tests; then
+if -d tests; then
     mv install-wp-test-env/test-template.php tests/
 fi
